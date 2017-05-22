@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,700');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #fff;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.wrapper {
+    display: block;
+    width: 100%;
+    min-height: 100vh;
+    background: #ea0a8c;
+    min-width: 320px;
+    overflow: hidden;
+}
+
+.wrapper-inner {
+    display: block;
+    width: 100%;
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+header[role="banner"] .wrapper-inner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 15px;
+}
+
+.logo {
+    display: block;
+    max-width: 200px;
+}
+
+.app-image {
+    max-width: 100px;
+}
+
+.content .wrapper-inner {
+    text-align: center;
+    padding: 20px 15px;
+}
+
+h1 {
+    font-size: 65px;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+
+h1 span {
+    display: block;
+    text-transform: uppercase;
+    font-size: inherit;
+}
+
+h1 span:nth-of-type(1) {
+    font-weight: 700;
+}
+
+.button-blue {
+    display: inline-block;
+    padding: 10px 5px;
+    border-radius: 5px;
+    background-color: rgba(61, 155, 233, 1);
+    border: solid rgba(43, 104, 156, 1) 0;
+    box-shadow: 1px 1px #1E4D74, 3px 3px #1E4D74, 5px 5px #1E4D74, 7px 7px #1E4D74, 9px 9px #1E4D74;
+    transition: all 0.12s ease 0s;
+    text-decoration: none;
+    font-size: 36px;
+    text-transform: uppercase;
+}
+
+.button-blue:hover {
+    background-color: rgb(40, 104, 158);
+    box-shadow: 0 0 #1E4D74, 0 0 #1E4D74, 0 0 #1E4D74, 0 0 #1E4D74, 0 0 #1E4D74;
+    margin: 7px -9px -7px 9px;
+}
+
+.note {
+    text-transform: uppercase;
+    font-size: 24px;
+    margin-top: 35px;
+}
+
+.block-2 {
+    background: #fff;
+}
+
+.slider {
+    width: 75%;
+    text-align: center;
+    position: relative;
+    margin: 0 auto;
+}
+
+.slider .slide {
+    padding: 20px 0;
+}
+
+.slider .slide:focus {
+    outline: none;
+}
+
+.slider .step {
+    display: block;
+    font-size: 36px;
+    color: #61afcb;
+}
+
+.slider img {
+    width: 100%;
+    margin: 20px auto;
+}
+
+.slider .slick-arrow {
+    display: block;
+    width: 50px;
+    height: 81px;
+    background: url(../images/sprite.png) no-repeat 0 0;
+    background-size: cover;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    cursor: pointer;
+    border: none;
+    font-size: 0;
+    color: transparent;
+    z-index: 10;
+}
+
+.slider .slick-prev {
+    left: -75px;
+}
+
+.slider .slick-next {
+    right: -75px;
+    background-position: -50px 0;
+}
+
+.slider .slick-arrow:focus {
+    outline: none;
+}
+
+footer[role="contentinfo"] {
+    text-align: center;
+    padding: 25px 0;
+}
+
+footer[role="contentinfo"] .copyright {
+    font-size: 24px;
+}
+
+@media(max-width: 768px) {
+
+    .button-blue {
+        font-size: 32px;
+    }
+
+    .slider {
+        width: 80%;
+    }
+
+    .slider .step {
+        height: 86px;
+    }
+
+    .slider .slick-arrow {
+        width: 40px;
+        height: 68px;
+    }
+
+    .slider .slick-next {
+        background-position: -42px 0;
+    }
+
+    .slider .slick-prev {
+        left: -50px;
+    }
+
+    .slider .slick-next {
+        right: -50px;
+    }
+
+}
+
+@media(max-width: 540px) {
+
+    .button-blue {
+        font-size: 17px;
+    }
+
+}
+
+@media(max-width: 460px) {
+
+    .logo {
+        max-width: 180px;
+    }
+
+    .app-image {
+        max-width: 80px;
+    }
+
+    h1 {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+
+    .slider .step {
+        height: 54px;
+    }
+
+    .note {
+        font-size: 17px;
+        margin-top: 25px;
+    }
+
+    .content .wrapper-inner {
+        padding: 10px 15px;
+    }
+
+    .slider .step {
+        font-size: 22px;
+    }
+
+    .slider img {
+        width: 60%;
+        margin: 10px auto;
+    }
+
+    footer[role="contentinfo"] .copyright {
+        font-size: 18px;
+    }
+
+    .slider .slick-prev {
+        left: -40px;
+    }
+
+    .slider .slick-next {
+        right: -40px;
+    }
+
+}
